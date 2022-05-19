@@ -1,0 +1,23 @@
+.filed-control__button-block{
+    display: flex;
+    justify-content: space-around;
+}
+.field-control__cells{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.field-control__cell{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+@media(max-width:400px){
+    .filed-control__button-block{
+        margin: 7% 0;
+    }
+    .field-control__cell{
+        width: 20px;
+        height: 20px;
+    }
+}

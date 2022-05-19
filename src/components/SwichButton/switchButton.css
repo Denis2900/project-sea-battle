@@ -1,0 +1,48 @@
+.switch-button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 72px; 
+    height: 38px; 
+    border-radius: 19px; 
+    background: linear-gradient(to right, #7fd03e 0%, rgb(204, 207, 21) 40%, rgb(217, 93, 4), rgb(167, 7, 7) 100%);
+    background-size: 180px 100%;
+    border: none;
+    padding-left: 2%;
+    cursor: pointer;
+    transition-property: justify-content;
+    transition-duration: 300ms; 
+}
+.switch-button__circle{
+    content: "";
+    height: 32px;
+    width: 32px; 
+    border-radius: 50%;
+    background: #fff; 
+}
+.switch-on {
+    animation: animation-switch-on 0.5s ease forwards;
+}
+.switch-off {
+    animation: animation-switch-off 0.5s ease forwards;
+}
+@keyframes animation-switch-on {
+    0%{
+        padding-left: 2%;
+        background-position-x: 0px;
+    }
+    100%{
+        padding-left: 23%;
+        background-position-x: -100px;
+    }
+}
+@keyframes animation-switch-off {
+    0%{
+        padding-left: 23%;
+        background-position-x: -100px;
+    }
+    100%{
+        padding-left: 2%;
+        background-position-x: 0px;
+    }
+}

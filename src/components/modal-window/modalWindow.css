@@ -1,0 +1,97 @@
+.modalWindow-show-left{
+    animation: modalWindowShowLeft 0.5s ease forwards;
+}
+@keyframes modalWindowShowLeft {
+    0%{
+        right: -40%;
+    }
+    100%{
+        right: 50%;
+    }
+}
+.modalWindow-hide-left{
+    opacity: 1;
+    min-width: 50%;
+    animation: modalWindowHideLeft 0.5s ease forwards;
+}
+@keyframes modalWindowHideLeft{
+    0%{
+        right: 50%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        right: -50%
+    }
+}
+.modalWindow-show-right{
+    min-width: 50%;
+    animation: modalWindowShowRight 0.5s ease forwards;
+}
+@keyframes modalWindowShowRight{
+    0%{
+        right: 150%;
+    }
+    100%{
+        right: 50%;
+    }
+}
+.modalWindow-hide-right{
+  opacity: 1;
+  min-width: 50%;
+  animation: modalWindowHideRight 0.5s ease forwards;
+}
+@keyframes modalWindowHideRight {
+    0%{
+        right: 50%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        right: 150%
+    }
+}
+.chell{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+}
+.modal-window{
+    max-width: 50%;
+    position: absolute;
+    padding: 2%;
+    background: #fff;
+    font-size: 1.3rem;
+    top: 50%;
+    text-align: center;
+    border-radius: 20px;
+    transform: translate(50%,-50%);
+}
+.modalWindow__title{
+    font-size: 2rem;
+    margin: 2% 0;
+}
+.modalWindow__sub-title{
+    font-size: 1.5rem;
+    margin: 2% 0;
+}
+.modalWindow__main-text{
+    text-align: left;
+}
+.modalWindow__paragraph{
+    margin: 2% 0;
+}
+.modalWindow__button-block{
+    margin: 10% 0 0 0 ;
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:500px){
+    .modal-window{
+        top: 20%;
+        width: 90%
+    }
+}

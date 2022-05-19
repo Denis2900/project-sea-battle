@@ -1,0 +1,30 @@
+.game-board{
+    background: #ccc;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2%;
+}
+.row__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row__button{
+    border-radius: 20px;
+    padding: 5% 3%;
+    font-size: 1.1rem;
+    border: none;
+}
+.row__item span{
+    margin: 0 5%;
+}
+.row__circle{
+    width: 40px;
+    height: 40px;
+    background: rgb(99, 98, 98);
+    border-radius: 50%;
+}

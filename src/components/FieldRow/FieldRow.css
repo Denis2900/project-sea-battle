@@ -1,0 +1,15 @@
+.field__row{
+    display: flex;
+}
+.field__cell{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+@media(max-width:400px){
+    .field__cell{
+        width: 30px;
+        height: 30px;
+    }
+}
