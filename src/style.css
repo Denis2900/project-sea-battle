@@ -17,6 +17,21 @@
     color: rgba(241, 241, 241, 0.959);
     background: rgb(5, 93, 234);
     cursor: pointer;
+    transition-duration: 300ms;
+    transition-property: box-shadow;
+}
+.button-add:hover{
+    box-shadow:  1px 2px 20px rgb(5, 93, 234);
+}
+.button-remove{
+    cursor: pointer;
+    color: #fff;
+    background: rgb(195, 19, 19);
+    transition-duration: 300ms;
+    transition-property: box-shadow;
+}
+.button-remove:hover{
+    box-shadow: 1px 2px 20px rgb(195, 19, 19);
 }
 .clickInButton{
     animation: clickInButton 0.1s ease;
@@ -25,11 +40,6 @@
     color: rgba(241, 241, 241, 0.959);
     background: rgb(94, 153, 247);
     cursor: pointer;
-}
-.button-remove{
-    cursor: pointer;
-    color: #fff;
-    background: rgb(195, 19, 19);
 }
 .row__red-circle{
     background: rgb(195, 19, 19);
