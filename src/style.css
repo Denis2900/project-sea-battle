@@ -19,7 +19,7 @@
     cursor: pointer;
 }
 .clickInButton{
-    animation: clickInButton 0.3s ease;
+    animation: clickInButton 0.1s ease;
 }
 .button-disabled{
     color: rgba(241, 241, 241, 0.959);

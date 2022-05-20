@@ -12,11 +12,6 @@ const ButtonBlock:FC<ButtonBlockProps> = ({numberOfCells,name})=>{
         arrayOfCells.push(div)
     }
     const addValueInCurrentShipLength = (event:React.MouseEvent<HTMLButtonElement>):void=>{
-        event.currentTarget.classList.add('clickInButton')
-        let deleteCallback = ()=>{
-            event.currentTarget.classList.remove('clickInButton')
-        }
-        addingShips.setTimeoutFunction(1000,deleteCallback)
         const button = event.currentTarget
         if(!button.classList.contains('button-disabled')){
             addingShips.currentShipLength = numberOfCells

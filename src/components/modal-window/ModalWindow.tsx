@@ -19,11 +19,6 @@ const ModalWindow:FC = observer(()=>{
             callback = ()=>{setModalWidnowClassList('modal-window modalWindow-show-left')}
         }
         addingShip.setTimeoutFunction(500,callback)
-        event.currentTarget.classList.add('clickInButton')
-        let deleteCallback = ()=>{
-            event.currentTarget.classList.remove('clickInButton')
-        }
-        addingShip.setTimeoutFunction(500,deleteCallback)
         let indexOfRules = 0
         rules.forEach((page,index)=>{
              if(JSON.stringify(oponentsField.objectOfModalWindow) === JSON.stringify(page)){
