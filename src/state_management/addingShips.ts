@@ -81,22 +81,18 @@ class AddingShips{
     addOrRemoveAttributeInCells = (element:EventTarget & HTMLDivElement | Element,attribute:string,attributeValue:string,command?:string):void=>{
         if(element.nextElementSibling){
             command?element.nextElementSibling.setAttribute(attribute,attributeValue):element.nextElementSibling.removeAttribute(attribute)
-            // element.nextElementSibling.classList.add('border')
         }
         if(element.previousElementSibling){
             command?element.previousElementSibling.setAttribute(attribute,attributeValue):element.previousElementSibling.removeAttribute(attribute)
-            // element.previousElementSibling.classList.add('border')
         }
         const attributeElement:number = Number(element.getAttribute('coordinateX'))
         if(element.parentElement?.nextElementSibling){
             const elementInNextRow = element.parentElement.nextElementSibling.children[attributeElement]
             command?elementInNextRow.setAttribute(attribute,attributeValue):elementInNextRow.removeAttribute(attribute)
-            // elementInNextRow.classList.add('border')
         }
         if(element.parentElement?.previousElementSibling){
             const elementInPreviousRow = element.parentElement.previousElementSibling.children[attributeElement]
             command?elementInPreviousRow.setAttribute(attribute,attributeValue):elementInPreviousRow.removeAttribute(attribute)
-            // elementInPreviousRow.classList.add('border')
         }
     }
     removeShipOfThisLength = (name:string):void=>{

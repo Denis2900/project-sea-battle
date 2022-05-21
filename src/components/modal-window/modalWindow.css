@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Yanone-Kaffeesatz';
+    src: url(../../fonts/YanoneKaffeesatz/static/YanoneKaffeesatz-Regular.ttf);
+}
 .modalWindow-show-left{
     animation: modalWindowShowLeft 0.5s ease forwards;
 }
@@ -61,6 +65,7 @@
 }
 .modal-window{
     position: absolute;
+    font-family: 'Yanone-Kaffeesatz';
     padding: 2%;
     background: #fff;
     font-size: 1.3rem;

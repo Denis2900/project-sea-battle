@@ -4,6 +4,10 @@ import addingShip from '../../state_management/addingShips';
 import { observer } from "mobx-react";
 import {rules} from '../RulesOfGame'
 import './modalWindow.css'
+import { configure } from "mobx"
+configure({
+    enforceActions: "never",
+})
 const ModalWindow:FC = observer(()=>{
     const [modalWindoClassList,setModalWidnowClassList] = useState<string>('modal-window modalWindow-show-left')
     const modalWindowButtonFunction = (event:React.MouseEvent<HTMLButtonElement>)=>{
